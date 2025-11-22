@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fluorite Games — FreeFire Mode</title>
+  <meta name="description" content="Fluorite — freefire mode, safe, tested on iOS/Android. Download, screenshots, features and FAQ." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Fluorite<span class="accent">.</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cta">
+        <a class="btn btn-primary" href="#download">Download</a>
+      </div>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>FreeFire Mode — Optimized & Safe</h1>
+          <p class="lead">Lightweight, compatible with iOS 14–16.6.1 and Android. No bans, regularly tested. Get the custom mode today.</p>
+          <div class="hero-actions">
+            <a id="download" class="btn btn-primary" href="#purchase">Get it now</a>
+            <button class="btn btn-outline" id="watch-demo">Watch demo</button>
+          </div>
+
+          <ul class="quick-features">
+            <li>✅ iOS & Android</li>
+            <li>✅ No ban claims (use responsibly)</li>
+            <li>✅ Easy installation guide</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="false">
+          <img src="https://images.unsplash.com/photo-1532619187604-1d9bff2f63f5?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef" alt="Game preview screenshot" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container section" id="features">
+      <h2 class="section-title">What’s inside</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <h3>Performance-tuned</h3>
+          <p>Optimized for smooth fps and low battery usage on a wide range of devices.</p>
+        </article>
+        <article class="feature">
+          <h3>Custom skins & UI</h3>
+          <p>Fresh skin pack and UI options to personalize your in-game look.</p>
+        </article>
+        <article class="feature">
+          <h3>Easy installer</h3>
+          <p>Step-by-step installation instructions with screenshots and video support.</p>
+        </article>
+        <article class="feature">
+          <h3>Regular updates</h3>
+          <p>Frequent compatibility patches and quality-of-life improvements.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="container section" id="gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=111111" alt="Screenshot 1">
+        <img src="https://images.unsplash.com/photo-1558981359-6a6c1bd3c8bd?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=222222" alt="Screenshot 2">
+        <img src="https://images.unsplash.com/photo-1535905748047-14e8f03f9a6d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=333333" alt="Screenshot 3">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=444444" alt="Screenshot 4">
+      </div>
+    </section>
+
+    <!-- Purchase / Download -->
+    <section class="container section light-cta" id="purchase" aria-labelledby="purchase-heading">
+      <div class="light-cta-inner">
+        <div>
+          <h2 id="purchase-heading">Ready to download?</h2>
+          <p>Choose your platform and follow the installer guide. All purchases are delivered instantly after payment.</p>
+        </div>
+        <div class="purchase-actions">
+          <a class="btn btn-primary" href="#" onclick="openCheckout('ios')">Buy for iOS</a>
+          <a class="btn btn-primary" href="#" onclick="openCheckout('android')">Buy for Android</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container section" id="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Is it safe? Will I get banned?</summary>
+          <p>We test extensively on supported devices. However, no tool can guarantee 100% protection from bans. Use responsibly and follow the guide.</p>
+        </details>
+
+        <details>
+          <summary>Which iOS versions are supported?</summary>
+          <p>Currently tested on iOS 14 through 16.6.1 — some features may vary by device.</p>
+        </details>
+
+        <details>
+          <summary>How do I install?</summary>
+          <p>Download, follow the installer PDF included in your purchase, and watch the tutorial video. Contact support if you get stuck.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container section" id="contact">
+      <h2 class="section-title">Contact & Support</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <h3>Support</h3>
+          <p>If you have questions about compatibility or need help during install, email <a href="mailto:support@fluorite.store">support@fluorite.store</a> or use the form.</p>
+          <ul>
+            <li>⚠️ Disclaimer: We provide software; follow platform rules.</li>
+            <li>⌚ Typical response time: within 24–48 hours.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Fluorite. All rights reserved.</small>
+      <nav class="footer-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal: demo (hidden by default) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <h3>Demo video</h3>
+        <p>Demo placeholder — replace with an embedded video or GIF.</p>
+        <div class="video-placeholder">[Video]</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
